@@ -12,5 +12,5 @@ function submitData(name, email){
       "accept":"application/json"
     },
     body:json.stringify(obj)
-  }).then((jsonRes)=>jsonRes.json()).then((res)=>body.innerHTML = res.message.id).catch((err)=>body.innerHTML = err.message);
+  }).then((jsonRes)=>jsonRes.json()).then((res)=> body.innerHTML = res.message.id).catch((err)=> body.innerHTML = err.message);
 }
